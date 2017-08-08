@@ -3,12 +3,18 @@
     package="com.example.xiantong.myapplication">
 
     <application
-        android:allowBackup="true"
+        android:name="com.activeandroid.app.Application"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <meta-data android:name="AA_DB_NAME" android:value="Pickrand.db" />
+        <meta-data android:name="AA_DB_VERSION" android:value="5" />
+        <meta-data android:name="AA_MODELS" android:value="com.myapp.model.Item，com.myapp.model.Category" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
